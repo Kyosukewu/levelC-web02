@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, shrink-to-fit=no'>
+    <title>Document</title>
+    
+<style type='text/css'>
+
+body{
+    width: 1024px;
+    box-sizing: border-box;
+    margin: 20px;
+}
+.f1 {	
+    font-size: 16px;
+    font-weight: bolder;
+	color: #F00; 
+    margin-bottom: 30px;  
+}
+table{
+    margin: auto;
+    border-spacing: 0;
+    border: 1px solid #ddd;
+}
+.left,.right{
+    padding: 2px;
+    border: 1px solid #ddd;
+}
+.left{
+    width: 120px; 
+    text-align-last: justify;
+    line-height: 1.5;
+}
+.right{
+    width: 580px;
+}
+#user_id{
+    width: 20em;
+}
+#user_email{
+    width:80%;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+#button{
+    font-size: 16px;
+    padding: 0 5px;
+    margin: 0 2px;
+}
+.left.sex1{
+    line-height: 3;
+}
+#user_msg{
+    width: 578px;
+}
+</style>
+</head>
+<body>
+    <marquee>謝謝蒞臨本網站，請給予我們支持、鼓勵與建言……</marquee>
+    <h1 class="f1">現在位置：首頁 &gt; 訪客留言</h1>
+
+    
+        <table class="table">
+            <form >
+            <tr>
+            <td class="left"><label for="user_id">姓名</label></td>
+            <td class="right"><input type="text" name="" id="user_id"></td>
+            </tr>
+            <tr>
+            <td class="left"><label for="user_email">電子郵件</label></td>
+            <td class="right"><input type="text" name="" id="user_email"></td>
+            </tr>
+            <tr>
+            <td class="left sex1">性別</td>
+            <td class="right sex1">
+                <input type="radio" name="sex" id="user_sex male">
+                <label for="user_sex male">男</label>
+
+                <input type="radio" name="sex" id="user_sex female">
+                <label for="user_sex female">女</label>
+                </td>
+            </tr>
+            <td class="left"><label for="user_job">職業類別</label></td>
+            <td class="right">
+                <select name="select" id="select">
+                <option>-----------請選擇職業類別-----------</option>
+                <option>1.現役軍人</option>
+                <option>2.專業人員</option>
+                <option>3.技術員及助理專業人員</option>
+                </select>
+            </td>
+            </tr>
+            <td class="left"><label for="user_msg">留言內容</label></td>
+            <td class="right">
+                <textarea style="resize: none;" rows="10" id="user_msg"></textarea>
+            </td>
+            </tr>
+            <tr>
+            <td class="left">
+                <div class="btn">
+                <input name="button" type="submit" id="button" value="送出" onclick="confirm('歡迎蒞臨本網站，您的寶貴意見我們會儘速處理與回覆，謝謝！')"/>
+                <input type="reset" name="button2" id="button" value="重寫" />
+                </div>
+            </td>
+            <td class="right"><div class="" id=""></div></td>
+            </tr>  
+        </form>
+</table>
+
+   
+
+    
+    
+    
+</body>
+</html>
