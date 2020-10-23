@@ -1,126 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <style type="text/css">
-    *{
-     margin: 0;
-     padding: 0;
-     list-style: none;
- }
- body{
-     padding: 54px 20px;
-     width: 984px;
-     height: 460px;
-     display: flex;
-     justify-content: space-between;
-     background-color: #fff;
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
 
- }
- .right{
-     width: 590px;
-     height: 460px;
-     background-color: #333;
- }
- .smellphoto{
-     width: 590px;
-     display: flex;
-     color: #ff0;
-     font-size: 14px;
- }
+    body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
 
- iframe{   
-     border-style:none ;
-     width: 560px;
-     height: 330px;
-     padding: 12px 15px;
- }
- .left{
-     width: 280px;
-     height: 460px;
-     border: 1px solid#999999;
-     
- }
- .left h1{
-     padding: 15px 0;
-     font-size: 16px ;
-     font-weight: bolder;
- }
- .item{
-     width: 280px;
-     height: 25px;
-     background-color: #3399FF;
-     display: flex;
-     line-height: 25px;
-     color: #fff;
-     text-align: center;
-     font-size: 14px;
- }
- .f{
-     width: 70%;
- }
- .r{
-     width: 30%;
- }
- .wrap{
-     width: 280px;
-     height: 25px;
-     display: flex;
-     line-height: 24px;
-     font-size: 12px;
-     background-color: #FFFFCC;
- }
-.wrap2{
-     width: 280px;
-     height: 25px;
-     display: flex;
-     line-height: 24px;   
-     font-size: 12px;
-     background-color: #dddddd;
- }
- .wrap .one, .wrap2 .one{
-    width: 70%;
-    
- }
- .wrap .two, .wrap2 .two{
-    width: 30%;
-    text-align: center;
- }
- .sp1,.sp2,.sp3,.sp4{
-     width: 25%;
-     text-align: center;
- }
- </style>
+    }
+
+    .right {
+        width: 590px;
+        height: 460px;
+        background-color: #333;
+    }
+
+    .smellphoto {
+        width: 590px;
+        display: flex;
+        color: #ff0;
+        font-size: 14px;
+    }
+
+    iframe {
+        border-style: none;
+        width: 560px;
+        height: 330px;
+        padding: 13px 15px 8px;
+    }
+
+    .left {
+        width: 280px;
+        height: 460px;
+        border: 1px solid#999999;
+
+    }
+
+    .left h1 {
+        padding: 15px 0;
+        font-size: 16px;
+        font-weight: bolder;
+    }
+
+    .item {
+        width: 280px;
+        height: 25px;
+        background-color: #3399FF;
+        display: flex;
+        line-height: 25px;
+        color: #fff;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .f {
+        width: 70%;
+    }
+
+    .r {
+        width: 30%;
+    }
+
+    .wrap {
+        width: 280px;
+        height: 25px;
+        display: flex;
+        line-height: 24px;
+        font-size: 12px;
+        background-color: #FFFFCC;
+    }
+
+    .wrap2 {
+        width: 280px;
+        height: 25px;
+        display: flex;
+        line-height: 24px;
+        font-size: 12px;
+        background-color: #dddddd;
+    }
+
+    .wrap .one,
+    .wrap2 .one {
+        width: 70%;
+
+    }
+
+    .wrap .two,
+    .wrap2 .two {
+        width: 30%;
+        text-align: center;
+    }
+
+    .sp1,
+    .sp2,
+    .sp3,
+    .sp4 {
+        width: 25%;
+        text-align: center;
+    }
+</style>
+
 <body>
     <div class="content">
-    <div class="left">
-        <h1>最新消息</h1>
-        <div class="item">
-            <div class="f">主題</div>
-            <div class="r">發布日期</div>
+        <div class="left">
+            <h1>最新消息</h1>
+            <div class="item">
+                <div class="f">主題</div>
+                <div class="r">發布日期</div>
+            </div>
+            <div class="wrap">
+                <div class="one"> <img src="../images/0201.png" alt=""> 公告全國技能競賽相關事宜</div>
+                <div class="two">2020/08/31</div>
+            </div>
+            <div class="wrap2">
+                <div class="one"> <img src="../images/0201.png" alt=""> 公告即測即評及發證相關事宜</div>
+                <div class="two">2020/08/31</div>
+            </div>
+            <div class="wrap">
+                <div class="one"> <img src="../images/0201.png" alt=""> 公告網頁設計修題相關事宜</div>
+                <div class="two">2020/08/31</div>
+            </div>
+            <div class="wrap2">
+                <div class="one"> <img src="../images/0201.png" alt=""> 公告網路架設應檢相關事宜</div>
+                <div class="two">2020/08/31</div>
+            </div>
         </div>
-        <div class="wrap">
-            <div class="one"> <img src="../image/0201.png" alt=""> 公告全國技能競賽相關事宜</div>
-            <div class="two">2020/08/31</div>
-        </div>
-        <div class="wrap2">
-            <div class="one"> <img src="../image/0201.png" alt=""> 公告即測即評及發證相關事宜</div>
-            <div class="two">2020/08/31</div>
-        </div>
-        <div class="wrap">
-            <div class="one"> <img src="../image/0201.png" alt=""> 公告網頁設計修題相關事宜</div>
-            <div class="two">2020/08/31</div>
-        </div>
-        <div class="wrap2">
-            <div class="one"> <img src="../image/0201.png" alt=""> 公告網路架設應檢相關事宜</div>
-            <div class="two">2020/08/31</div>
-        </div>
-        </div>
-
-
     </div>
     <div class="right">
         <div class="photo">
@@ -128,25 +146,23 @@
         </div>
         <div class="smellphoto">
             <div class="sp1">
-                <a href="../others/p1.html" target="mainphoto"> <img src="../image/0202B.png" alt="第30屆倫敦奧運"></a>
-            <p>第30屆倫敦奧運</p>
+                <a href="../others/p1.html" target="mainphoto"> <img src="../images/0202B.png" alt="第30屆倫敦奧運"></a>
+                <p>第30屆倫敦奧運</p>
             </div>
             <div class="sp2">
-                <a href="../others/p2.html" target="mainphoto"><img src="../image/0203B.png" alt="許淑淨奪舉重銀牌"></a>
-            <p>許淑淨奪舉重銀牌</p>
+                <a href="../others/p2.html" target="mainphoto"><img src="../images/0203B.png" alt="許淑淨奪舉重銀牌"></a>
+                <p>許淑淨奪舉重銀牌</p>
             </div>
             <div class="sp3">
-                <a href="../others/p3.html" target="mainphoto"><img src="../image/0204B.png" alt="第26屆深圳世大運"></a>
-            <p>第26屆深圳世大運</p>
+                <a href="../others/p3.html" target="mainphoto"><img src="../images/0204B.png" alt="第26屆深圳世大運"></a>
+                <p>第26屆深圳世大運</p>
             </div>
             <div class="sp4">
-                <a href="../others/p4.html" target="mainphoto"><img src="../image/0205B.png" alt="第27屆喀山世大運"></a>
-            <p>第27屆喀山世大運</p>
+                <a href="../others/p4.html" target="mainphoto"><img src="../images/0205B.png" alt="第27屆喀山世大運"></a>
+                <p>第27屆喀山世大運</p>
             </div>
         </div>
-
-
     </div>
-</div>
 </body>
+
 </html>
