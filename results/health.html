@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="css/reset.css">
 <style type="text/css">
 body{
-    width: 984px;
+    width: 100%;
     margin: auto;
     box-sizing: border-box;
 }
-.f1 {	
+.path {	
     font-size: 16px;
     font-weight: bolder;
 	color: #F00;
@@ -32,22 +32,18 @@ body{
 input {
  display: none;
 }
-
 .tp {
  display: inline-block;
  padding: 5px 10px;
  font-weight: 600;
 }
-
 .tp:hover {
  cursor:  pointer;
 }
-
 input:checked + .tp {
  background: #ccc;
  border: 1px solid #000000;
 }
-
 #tab1:checked ~ .content .content1,
 #tab2:checked ~ .content .content2,
 #tab3:checked ~ .content .content3,
@@ -57,19 +53,20 @@ input:checked + .tp {
 </style>
 </head>
 <body>
-    <h1 class="f1">現在位置：首頁 &gt; 健康天地</h1>
+    <h1 class="path">現在位置：首頁 &gt; 健康天地</h1>
 
     <div class="tabbox">
-        <input checked="" id="tab1" name="tabs" type="radio" />
+        
+        <input id="tab1" name="tabs" type="radio" checked>
         <label class="tp" for="tab1">健康新知</label>
-         
-        <input id="tab2" name="tabs" type="radio" />
+        
+        <input id="tab2" name="tabs" type="radio">
         <label class="tp" for="tab2">菸害防制</label>
         
-        <input id="tab3" name="tabs" type="radio" />
+        <input id="tab3" name="tabs" type="radio">
         <label class="tp" for="tab3">癌症防治</label>
 
-        <input id="tab4" name="tabs" type="radio" />
+        <input id="tab4" name="tabs" type="radio">
         <label class="tp" for="tab4">慢性病防治</label>
 
     <div class="content">
