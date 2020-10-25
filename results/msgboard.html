@@ -6,11 +6,6 @@
     <title>Document</title>
     
 <style type="text/css">
-*{
-    margin:0;
-    padding:0;
-    list-style: none;
-}
 body{
     width: 100%;
     margin: auto;
@@ -20,9 +15,8 @@ body{
     font-weight: bolder;
 	color: #F00; 
 }
-/* table{
+table{
     margin: auto;
-    border-spacing: 0;
     border: 1px solid #ddd;
 }
 .left,.right{
@@ -32,110 +26,18 @@ body{
 .left{
     width: 120px; 
     text-align-last: justify;
-    line-height: 1.5px;
-}
-.right{
-    width: 580px;
 }
 .btn{
-    display: flex;
-    justify-content: center;
-}
-#button{
-    font-size: 16px;
-    padding: 0 5px;
-    margin: 0 2px;
-}
-.left.sex1{
-    line-height: 3;
-} */
-.msgb{
-    width: 800px;
-    border: 1px solid;
-    margin: auto;
-    padding: 2px;
-}
-.t1{
     width: 100px;
-    height: 20px;
-    text-align-last: justify;
-    margin: 5px 5px;
-}
-.btn{
-    width: 120px;
-    text-align: center;
-}
-.name,.email,.sex,.job,.msg{
-    display: flex;
-    align-items: center;
-    border: 1px solid;
-    margin: 2px;
+    margin: auto;
 }
 </style>
 </head>
 <body>
     <marquee>謝謝蒞臨本網站，請給予我們支持、鼓勵與建言……</marquee>
     <h1 class="path">現在位置：首頁 &gt; 訪客留言</h1>
-<form>
-    <div class="msgb">
-        <div class="name">
-            <p class="t1">姓名</p>
-            <input type="text" size="20" id="user_id">
-            <label for="user_id"></label>
-        </div>
-        <div class="email">
-            <p class="t1">電子郵件</p>
-            <input type="text" size="60" id="user_email">
-            <label for="user_email"></label>
-        </div>
-        <div class="sex">
-            <p class="t1">性別</p>
-            <input type="radio" name="sex" id="user_sex male">
-            <label for="user_sex male">男</label>
-            <input type="radio" name="sex" id="user_sex female">
-            <label for="user_sex female">女</label>
-        </div>
-        <div class="job">
-            <p class="t1">職業類別</p>
-            <select name="select" id="select">
-                <option>-----------請選擇職業類別-----------</option>
-                <option>1.現役軍人</option>
-                <option>2.專業人員</option>
-                <option>3.技術員及助理專業人員</option>
-            </select>
-            <label for="user_job"></label>
-        </div>
-        <div class="msg">
-            <p class="t1">留言內容</p>
-            <textarea cols="78" rows="10" id="user_msg"></textarea>
-            <label for="user_msg"></label>
-        </div>
-        <div class="btn">
-            <input name="button" type="submit" id="button" value="送出" onclick="confirm('歡迎蒞臨本網站，您的寶貴意見我們會儘速處理與回覆，謝謝！')">
-            <input name="button2" type="reset" id="button2" value="重寫">
-        </div>
-    </div>
-</form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- <table class="table">
-        <form >
+    <form>
+        <table class="table">
             <tr>
             <td class="left"><label for="user_id">姓名</label></td>
             <td class="right"><input type="text"  size="20" id="user_id"></td>
@@ -172,13 +74,13 @@ body{
             <tr>
             <td class="left">
                 <div class="btn">
-                <input name="button" type="submit" id="button" value="送出" onclick="confirm('歡迎蒞臨本網站，您的寶貴意見我們會儘速處理與回覆，謝謝！')">
-                <input name="button2" type="reset" id="button2" value="重寫">
+                <input type="submit" class="button" value="送出" onclick="confirm('歡迎蒞臨本網站，您的寶貴意見我們會儘速處理與回覆，謝謝！')">
+                <input type="reset" class="button" value="重寫">
                 </div>
             </td>
             <td class="right"><div></div></td>
             </tr>  
-        </form> -->
-</table>    
+        </table>    
+    </form>
 </body>
 </html>
